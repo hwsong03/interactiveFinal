@@ -1,0 +1,94 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "new-science-serif", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+        -60deg,
+        #BEEF9E 0%,
+        #A6C36F 25%,
+        #828C51 50%,
+        #335145 75%,
+        #1E352F 100%
+    );
+    animation: moveBackground 20s linear infinite;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.red-text {
+    color: #800000; 
+}
+
+/* Restart button */
+.restart-button {
+    font-family: "nimbus-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #013220; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 50%; 
+    padding: 10px; 
+    width: 50px; 
+    height: 50px; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em; 
+}
+
+.restart-button:hover {
+    background-color: #0A4C33; 
+}
+
+button {
+    font-family: "nimbus-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f5f5f5; 
+    color: #013220; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #2B3A42; 
+    color: #ffffff; 
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 768px) {
+    h1, p {
+        font-size: 16px;
+    }
+    button {
+        padding: 8px 16px;
+    }
+}
