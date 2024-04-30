@@ -21,6 +21,8 @@ body {
         #1E352F 100%
     );
     animation: moveBackground 20s linear infinite;
+    padding-right: 80px;
+    padding-left: 80px;
 }
 
 h1, p {
